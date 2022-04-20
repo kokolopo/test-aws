@@ -6,6 +6,6 @@ COPY . .
 
 RUN go build -o todo-api
 
-EXPOSE 8080
+EXPOSE 1324
 
 CMD ./todo-api
