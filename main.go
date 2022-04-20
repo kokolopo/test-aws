@@ -35,6 +35,6 @@ func main() {
 	api.POST("/users", userController.CreateUser)
 	api.GET("/users", userController.GetAll)
 
-	e.Logger.Fatal(e.Start(config.SERVER_ADDRESS))
+	e.Logger.Fatal(e.Start(":8080"))
 
 }
