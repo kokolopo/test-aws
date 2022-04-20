@@ -14,8 +14,7 @@ var (
 	err error
 )
 
-func InitDatabase() {
-	config := config.InitConfiguration()
+func InitDatabase(config config.Config) {
 
 	//dsn := "username:password@tcp(host:3306)/dbname?charset=utf8mb4&parseTime=True&loc=Local"
 	dsn := config.DB_USERNAME + ":" + config.DB_PASSWORD + "@tcp(" + config.DB_HOST + ":" + config.DB_PORT + ")/" + config.DB_NAME + "?charset=utf8mb4&parseTime=True&loc=Local"
