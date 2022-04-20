@@ -4,17 +4,16 @@ import (
 	"buat_docker/controller"
 	"buat_docker/database"
 	"buat_docker/user"
-	"fmt"
 
 	"github.com/labstack/echo/v4"
 )
 
-func init() {
-	fmt.Println("Bissmillah...")
-	database.InitDatabase()
-}
+// func init() {
+// 	fmt.Println("Bissmillah...")
+// }
 
 func main() {
+	database.InitDatabase()
 
 	userRepo := user.NewUserRepository(database.DB)
 	userService := user.NewUserService(userRepo)
