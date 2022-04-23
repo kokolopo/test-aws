@@ -22,7 +22,7 @@ func InitConfiguration() Config {
 		DB_PASSWORD:    GetOrDefault("DB_PASSWORD", ""),
 		DB_NAME:        GetOrDefault("DB_NAME", "kuliah"),
 		DB_PORT:        GetOrDefault("DB_PORT", "3306"),
-		DB_HOST:        GetOrDefault("DB_HOST", "containers-us-west-42.railway.app"),
+		DB_HOST:        GetOrDefault("DB_HOST", "localhost"),
 		JWT_KEY:        GetOrDefault("JWT_KEY", ""),
 	}
 }
